@@ -9,6 +9,7 @@ import { NavController } from '@ionic/angular';
 export class HomePage {
   teamA=0;
   teamB= 0;
+
   constructor(public navCtrl: NavController) {
     this.teamA=0;
     this.teamB=0;
@@ -39,7 +40,10 @@ export class HomePage {
     }
     else if(num==1){
       this.teamA -=1;
-    }  
+    }
+    if(this.teamA<0){
+      this.teamA=0
+    }
   }
 
 
@@ -69,11 +73,19 @@ export class HomePage {
     }
     else if(num==1){
       this.teamB -=1;
-    }  
+    }
+    if (this.teamB<0){
+      this.teamB==0
+    } 
+    
+    if (this.teamB<0){
+      this.teamB = 0
+    }
   } 
 
   onClick(){
     this.teamA =0;
     this.teamB =0;
   }
+
 }
