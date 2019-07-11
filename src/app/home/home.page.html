@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="warning">
+    <ion-title color="medium">
+      courtCounter
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+  <ion-content padding>
+    <div class="left" id = "bd">
+      <h1>Team A </h1>
+      <h2>
+        {{teamA}}
+      </h2>
+      <ion-button color="warning"(click)="onClickA2(4)">-4</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning" (click)="onClickA1(4)">+4</ion-button><br><br>
+      <ion-button color="warning"(click)="onClickA2(3)">-3</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning" (click)="onClickA1(3)">+3</ion-button><br><br>
+      <ion-button color="warning"(click)="onClickA2(2)">-2</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning"(click)="onClickA1(2)">+2</ion-button><br><br>
+      <ion-button color="warning"(click)="onClickA2(1)">-1</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning"(click)="onClickA1(1)">+1</ion-button>
+      
+    </div>
+    
+    <div class="right">
+      <h1>Team B</h1>
+      <h2>
+          {{teamB}}
+      </h2>
+      <ion-button color="warning"(click)="onClickB2(4)">-4</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning" (click)="onClickB1(4)">+4</ion-button><br><br>
+      <ion-button color="warning"(click)="onClickB2(3)">-3</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning"(click)="onClickB1(3)">+3</ion-button><br><br>
+      <ion-button color="warning"(click)="onClickB2(2)">-2</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning"(click)="onClickB1(2)">+2</ion-button><br><br>
+      <ion-button color="warning"(click)="onClickB2(1)">-1</ion-button>&nbsp;&nbsp;&nbsp;
+      <ion-button color="warning"(click)="onClickB1(1)">+1</ion-button>
+        
+    </div>
+    <div class="btn">
+      <ion-button color="warning" (click)="onClick()">Resert</ion-button>
+    </div>
+
+
+</ion-content>
